@@ -1,0 +1,10 @@
+boto3
+pan-os-python
+pan-python
+xmltodict
+panos-upgrade-assurance
+setuptools
+python-dotenv
+langgraph
+langchain
+langchain-openai
