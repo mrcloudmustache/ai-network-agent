@@ -110,4 +110,4 @@ Result: RDP traffic is permitted between Marketing and Sales VPCs through the fi
 MIT
 
 ## Author
-- James Thom
+- James Thomas
