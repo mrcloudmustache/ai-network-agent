@@ -7,7 +7,7 @@ This repository contains utilities and scripts for interacting with AWS and Palo
 - `agent.py` - Main agent logic for network automation.
 - `aws_utils.py` - Utility functions for AWS integration.
 - `palo_utils.py` - Utility functions for Palo Alto Networks integration.
-- `requiments.txt` - Python dependencies for the project.
+- `requirements.txt` - Python dependencies for the project.
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ This repository contains utilities and scripts for interacting with AWS and Palo
    ```
 2. Install dependencies:
    ```bash
-   pip install -r requiments.txt
+   pip install -r requirements.txt
    ```
 
 ### Adding Credentials with .env
@@ -34,9 +34,10 @@ This project uses a `.env` file to manage sensitive credentials (such as AWS key
 # Example .env file
 AWS_ACCESS_KEY_ID=your_aws_access_key_id
 AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
+PA_VM_IP='your_palo_ip_address'
 PA_VM_USERNAME=your_palo_username
 PA_VM_PASSWORD=your_palo_password
-OPENAI_API_KEY='openapi api key'
+OPENAI_API_KEY='openapi_api_key'
 ```
 
 **Note:** Never commit your `.env` file to version control. Add `.env` to your `.gitignore` file if it is not already present.
@@ -50,9 +51,9 @@ Use utility modules (`aws_utils.py`, `palo_utils.py`) as libraries in your own s
 
 ## Cloud Architecture
 
-The infrastructure used for this project was built in AWS using two application VPC's interconected by a Transit Gateway and one inspection VPC which contains a single Palo Alto VM.
+The infrastructure used for this project was built in AWS using two application VPC's interconnected by a Transit Gateway and one inspection VPC, which contains a single Palo Alto VM.
 
-`Terraform` was used to deploy the entire infrustructure and the link to the code will be added here soon.
+`Terraform` was used to deploy the entire infrastructure, and the link to the code will be added here soon.
 
 ```mermaid
 flowchart TD
