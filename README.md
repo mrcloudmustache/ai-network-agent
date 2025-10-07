@@ -34,10 +34,10 @@ This project uses a `.env` file to manage sensitive credentials (such as AWS key
 # Example .env file
 AWS_ACCESS_KEY_ID=your_aws_access_key_id
 AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
-PA_VM_IP='your_palo_ip_address'
+PA_VM_IP=your_palo_ip_address
 PA_VM_USERNAME=your_palo_username
 PA_VM_PASSWORD=your_palo_password
-OPENAI_API_KEY='openapi_api_key'
+OPENAI_API_KEY=openapi_api_key
 ```
 
 **Note:** Never commit your `.env` file to version control. Add `.env` to your `.gitignore` file if it is not already present.
